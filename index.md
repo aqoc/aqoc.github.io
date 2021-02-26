@@ -6,3 +6,4 @@ I'll link you here if you ask me a common question.
 ## Contents
 
 - [Counting](faq/counting.html)
+- [Scheduling](faq/schedule.md)

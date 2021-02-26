@@ -8,7 +8,10 @@ The `execute if entity` subcommand returns the number of entities selected, if n
 ```
 execute store result score <fakeplayer> <objective> if entity <selector>
 ```
-to count something. For example, to summon a new cow if there are less than 2 in a 5 block radius:
+to count something.
+
+**Example**:
+> Summon a new cow if there are less than 2 in a 5 block radius:
 ```
 # Create an objective (you probably already have one)
 scoreboard objectives add general
@@ -27,4 +30,13 @@ execute store result score <fakeplayer> <objective> run clear @s diamond_shovel 
 We can even check for nbt tags:
 ```
 execute store result score <fakeplayer> <objective> run clear @s diamond_shovel{Unbreakable:1b} 0
+```
+
+**Example**:
+> Count how much sand a player has
+```
+# Create an objective
+scoreboard objectives add general
+# Count the sand
+execute store result #sand general run clear @s sand 0
 ```
