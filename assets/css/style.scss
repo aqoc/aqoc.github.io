@@ -12,12 +12,13 @@ footer {
 }
 
 .left-menu {
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 20%;
   border-radius: 10px;
-  background-color: #909090;
+  background-color: #D0D0D0;
   border-color: black;
+  padding: 5px;
   a {
     font-weight: bold;
     color: black !important;
