@@ -9,4 +9,4 @@ I'll link you here if you ask me a common question.
 
 ## Contents
 
-- [Counting](counting)
+- [Counting](faq/counting)
