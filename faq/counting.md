@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Counting
 
 > How do I count the number of *x*?

@@ -12,11 +12,15 @@ The time can either be ticks (`5t`), seconds (`10s`), or in-game days (`1d`). As
 
 **Example**:
 > Say "hello", then "world" 10 seconds later
+
+
 ```
 #> foo:function1.mcfunction
 say hello
 schedule function foo:function2 10s
+```
 
+```
 #> foo:function2.mcfunction
 say world
 ```
@@ -32,12 +36,15 @@ If, for whatever reason, you don't want to schedule a command, you can use a sco
 
 **Example**:
 > Say "hello", then "world" 10 seconds `(=200 ticks)` later
+
 ```
 #> foo:function1.mcfunction
 say hello
 # Initialise the timer
 scoreboard players set #time global 0
+```
 
+```
 #> foo:tick.mcfunction
 # Increment the timer
 scoreboard players add #time global 1

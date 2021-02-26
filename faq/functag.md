@@ -25,7 +25,7 @@ That's it! Note how they go in the minecraft namespace instead of your own; they
 say hi
 ```
 ```json
-#> data/minecraft/tags/functions/tick.json
+// data/minecraft/tags/functions/tick.json
 {
     "values": [
         "hello:hi"
