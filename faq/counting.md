@@ -21,3 +21,6 @@ execute store result #cows general if entity @e[type=cow,distance=..5]
 # If we have less than 2, summon a new one
 execute if score #cows general matches ..1 run summon cow
 ```
+
+## [Items](#items)
+
