@@ -3,7 +3,7 @@ layout: faq
 ---
 # Function tags
 
-> How do I run a function every tick, or when my datapack loads?
+> How do I run a function every tick, or when my data pack loads?
 
 You use *function tags*!
 
