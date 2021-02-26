@@ -10,3 +10,6 @@ I'll link you here if you ask me a common question.
 - [Data packs](faq/datapack.md)
 - [Function Tags](faq/functag.md)
 - [Shootfacing](faq/shootfacing.md)
+- [Player NBT Modification](faq/playernbt.md)
+- [Optimization](faq/optimization.md)
+- [Random Number Generation](faq/random.md)
