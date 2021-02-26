@@ -22,16 +22,17 @@ That's it! Note how they go in the minecraft namespace instead of your own; they
 
 **Example**:
 > Say hi every tick
-
-```
+>
+> ```
 #> data/hello/functions/hi.mcfunction
 say hi
-```
-```json
+> ```
+>
+> ```json
 // data/minecraft/tags/functions/tick.json
 {
     "values": [
         "hello:hi"
     ]
 }
-```
+> ```
