@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Scheduling
 
 > How can I run a command after a delay?
@@ -13,6 +16,7 @@ The time can either be ticks (`5t`), seconds (`10s`), or in-game days (`1d`). As
 **Example**:
 > Say "hello", then "world" 10 seconds later
 
+&nbsp;
 
 ```
 #> foo:function1.mcfunction

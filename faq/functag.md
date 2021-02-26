@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Function tags
 
 > How do I run a function every tick, or when my datapack loads?

@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Datapacks
 
 > How do I create a datapack?
