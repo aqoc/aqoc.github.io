@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Optimization
 > How can I optimize my functions?
 

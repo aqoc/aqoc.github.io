@@ -1,3 +1,6 @@
+---
+layout: faq
+---
 # Player NBT Modification
 > Why can't I modify a player's nbt?
 
