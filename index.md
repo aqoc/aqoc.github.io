@@ -8,3 +8,4 @@ I'll link you here if you ask me a common question.
 - [Counting](faq/counting.html)
 - [Scheduling](faq/schedule.md)
 - [Datapacks](faq/datapack.md)
+- [Function Tags](faq/functag.md)
