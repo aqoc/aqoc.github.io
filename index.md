@@ -13,3 +13,4 @@ I'll link you here if you ask me a common question.
 - [Player NBT Modification](faq/playernbt.md)
 - [Optimization](faq/optimization.md)
 - [Random Number Generation](faq/random.md)
+- [Damage](faq/damage.md)
