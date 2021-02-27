@@ -8,10 +8,13 @@
             {% endfor %}
         };
         let query = document.getElementById("searchbar").value;
+        console.log(`Query: ${query}`);
         let results = document.getElementById("results");
         for (const entry in entries) {
             const tags = entries[entry];
+            console.log(tags);
             tags.forEach(tag => {
+                console.log(`Tag ${tag}`);
                 if (query == tag) {
                     console.log(query, entry);
                     results.innerHTML += `<li>${entry}</li>\n`;
