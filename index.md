@@ -13,6 +13,5 @@ I'll link you here if you ask me a common question.
 
 {% for page in site.pages %}
     {% if page.dir == '/faq/' %}
-- [{{page.title}}]({{page.url}})
-    {% endif %}
+- [{{page.title}}]({{page.url}}){% endif %}
 {% endfor %}
