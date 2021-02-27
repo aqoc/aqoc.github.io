@@ -1,7 +1,14 @@
-<input type="text" placeholder="Search here for different articles" id="searchbar" onchange="search()"/>
+<input type="text" placeholder="Search here for different articles" id="searchbar" onkeypress="search()"/>
 <div id="results"></div>
 <script>
     function search() {
-        alert("search");
+        const entries = [
+            {% for page in site.pages %}
+                {% if page.dir == '/faq/' %}
+            "{{page.title}}": [{{page.tags}}]
+                {% endif %}
+            {% endfor %}
+        ];
+        alert(entries);
     }
 </script>
