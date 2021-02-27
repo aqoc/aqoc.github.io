@@ -53,11 +53,11 @@
             }
             console.log(tags);
         }
-        relevant = relevant.sort((a, b) => a.relevance - b.relevance);
+        relevant = relevant.sort((a, b) => b.relevance - a.relevance);
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
         });
-        // Efficiency? Pfft
+        // Efficiency?
         if (query.length < 3) {results.innerHTML = "";}
     });
 </script>
