@@ -7,7 +7,8 @@ tags:
     - datapack
     - tags
 summary:
-    - 
+    - function tags load tick
+    - tick repeated lots
 ---
 
 You use *function tags*!

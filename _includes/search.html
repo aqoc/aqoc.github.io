@@ -34,13 +34,17 @@
             let matched = 0;
             summaries.forEach(summary => {
                 summary.forEach(s => {
-                    words.forEach(word => {
-                        const distance = levenshtein(s, word);
-                        console.log(`Distance between ${s} and ${word} is ${distance}`);
-                        if (distance <= 2) {
-                            matched += 1;
-                        }
-                    })
+                    let any = false;
+                    for (let p = 0; p < s.length; p++) {
+                            words.forEach(word => {
+                            const distance = levenshtein(s, word);
+                            console.log(`Distance between ${s} and ${word} is ${distance}`);
+                            if (distance <= 2) {
+                                any = true;
+                            }
+                        })
+                    }
+                    if (any) {matched += 1}
                 })
             });
             if (matched >= Math.ceil(words.length / 3)) {
