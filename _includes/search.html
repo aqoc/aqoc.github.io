@@ -10,7 +10,7 @@
                 summary: [
                     {% for s in page.summary %}
                         {% assign items = s | split: " " %}
-                        [{% for i in items %} "{{i}}," {% endfor %}],
+                        [{% for i in items %} "{{i}}", {% endfor %}],
                     {% endfor %}
                 ]
                 url: "{{page.url}}",
