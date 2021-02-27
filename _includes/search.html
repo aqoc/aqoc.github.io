@@ -1,4 +1,4 @@
-<input type="text" placeholder="Search here for different articles" id="searchbar"/><br/>
+<input type="text" placeholder="Search here for different articles" id="searchbar"/><br/><br/>
 <span>
     Filters:
     <select id="filter">
@@ -82,11 +82,18 @@
         // Efficiency? Pfft
         if (query.length < 3) {results.innerHTML = "";}
     });
+    let filters = [];
     document.getElementById("add").addEventListener("click", event => {
         const selected = document.getElementById("filter").value;
-        document.getElementById("filters").innerHTML += `<button type="button" onclick="remove("${selected}")">${selected}</button>`;
+        filters.push(selected);
+        const fill = document.getElementById("filters");
+        fill.innerHTML = "";
+        filters.forEach(filter => {
+            fill.innerHTML += `<button type="button" onclick="remove('${selected}')">${selected}</button>&nbsp;`
+        });
     });
     function remove(filter) {
         alert(filter);
+        filters.remove(filter);
     }
 </script>
