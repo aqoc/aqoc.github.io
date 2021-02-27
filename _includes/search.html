@@ -5,10 +5,15 @@
         const entries = [
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
-            "{{page.title}}": [{{page.tags}}]
+            "{{page.title}}": [{% for tag in page.tags %} "{{tag}}", {% endfor %}]
                 {% endif %}
             {% endfor %}
         ];
-        alert(entries);
+        let query = document.getElementById("searchbar").value;
+        for ((entry, tag) in entries) {
+            if (query == tag) {
+                alert(entry);
+            }
+        }
     }
 </script>
