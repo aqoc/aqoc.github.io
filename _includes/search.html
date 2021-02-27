@@ -45,11 +45,10 @@
             });
             if (matched >= Math.ceil(words.length / 3)) {
                 console.log(query, entry);
-                relevant += {relevance: matched, url: url, entry: entry, question: question};
+                relevant.push({relevance: matched, url: url, entry: entry, question: question});
             }
             console.log(tags);
         }
-        console.log(typeof(relevant));
         relevant = relevant.sort((a, b) => a.relevance - b.relevance);
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
