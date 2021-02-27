@@ -12,7 +12,7 @@
         {%- endcapture -%}
         {%- assign options = optionstr | split, "," -%}
         {%- for option in options -%}
-        <option value="{{option}}"></option>
+        <option>{{value}}</option>
         {%- endfor -%}
     </select>
 </span>
