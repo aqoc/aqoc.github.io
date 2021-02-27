@@ -1,7 +1,7 @@
 <input type="text" placeholder="Search here for different articles" id="searchbar"/>
 <ul id="results"></ul>
 <script>
-    document.getElementById("searchbar").addEventListener('keyPress', (event) => {
+    document.getElementById("searchbar").addEventListener('keydown', (event) => {
         const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
