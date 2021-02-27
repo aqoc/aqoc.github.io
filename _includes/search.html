@@ -1,4 +1,4 @@
-<input type="text" placeholder="Search here for different articles" id="searchbar"/>
+<input type="text" placeholder="Search here for different articles" id="searchbar"/><br/>
 <span>
     Filters:
     <select id="filter">
@@ -16,7 +16,8 @@
         <option>{{option}}</option>
         {%- endfor -%}
     </select>
-    <button type="button">Add</button>
+    <button type="button" id="add">Add</button>
+    <span id="filters"></span>
 </span>
 <ul id="results"></ul>
 <script src="../js/levenshtein.js"></script>
@@ -81,4 +82,11 @@
         // Efficiency? Pfft
         if (query.length < 3) {results.innerHTML = "";}
     });
+    document.getElementById("add").addEventListener("click", event => {
+        const selected = document.getElementById("filter").value;
+        document.getElementById("filters").innerHTML += `<button type="button" onclick="remove("${selected}")">${selected}</button>`;
+    });
+    function remove(filter) {
+        alert(filter);
+    }
 </script>
