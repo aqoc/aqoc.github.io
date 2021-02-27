@@ -8,9 +8,11 @@
             {% endfor %}
         };
         let query = document.getElementById("searchbar").value;
+        console.log("Query:", query);
         let results = document.getElementById("results");
         for (const entry in entries) {
             const tag = entries[entry];
+            console.log(entry, tag);
             if (query == tag) {
                 alert(entry);
             }
