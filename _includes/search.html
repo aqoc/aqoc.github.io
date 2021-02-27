@@ -2,13 +2,13 @@
 <div id="results"></div>
 <script>
     function search() {
-        const entries = [
+        const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
             "{{page.title}}": [{% for tag in page.tags %} "{{tag}}", {% endfor %}]
                 {% endif %}
             {% endfor %}
-        ];
+        };
         let query = document.getElementById("searchbar").value;
         for ((entry, tag) in entries) {
             if (query == tag) {
