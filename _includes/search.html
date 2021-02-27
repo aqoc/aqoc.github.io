@@ -85,7 +85,9 @@
     let filters = [];
     document.getElementById("add").addEventListener("click", event => {
         const selected = document.getElementById("filter").value;
-        filters.push(selected.slice());
+        if (!filters.includes(selected)) {
+            filters.push(selected.slice());
+        }
         update();
     });
     function update() {
@@ -96,6 +98,6 @@
         });
     }
     function remove(filter) {
-        filters.remove(filter);
+        filters.splice(filters.indexOf(filter), 1);
     }
 </script>
