@@ -5,7 +5,7 @@
         const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
-            "{{page.title}}": [{% for tag in page.tags %} "{{tag}}", {% endfor %}]
+            "{{page.title}}": [{% for tag in page.tags %} "{{tag}}", {% endfor %}],
                 {% endif %}
             {% endfor %}
         };
