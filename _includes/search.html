@@ -1,4 +1,21 @@
-<input type="text" placeholder="Search here for different articles" id="searchbar"/>
+<span>
+    <input type="text" placeholder="Search here for different articles" id="searchbar"/>
+    <select id="filter">
+        {%- capture optionstr -%}
+            {%- for page in site.pages -%}
+                {%- if page.dir == '/faq/' -%}
+                    {%- for tag in page.tags -%}
+                        {{tag}},
+                    {%- endfor -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endcapture -%}
+        {%- assign options = optionstr | split, "," -%}
+        {%- for option in options -%}
+        <option value="{{option}}"></option>
+        {%- endfor -%}
+    </select>
+</span>
 <ul id="results"></ul>
 <script src="../js/levenshtein.js"></script>
 <script>
