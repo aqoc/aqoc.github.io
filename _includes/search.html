@@ -1,5 +1,6 @@
 <input type="text" placeholder="Search here for different articles" id="searchbar"/>
 <ul id="results"></ul>
+<script src="../js/levenshtein.js"></script>
 <script>
     document.getElementById("searchbar").addEventListener('input', (event) => {
         const entries = {
