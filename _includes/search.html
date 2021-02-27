@@ -23,6 +23,7 @@
 <script src="../js/levenshtein.js"></script>
 <script>
     document.getElementById("searchbar").addEventListener('input', (event) => {
+        let filters = [];
         const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
@@ -73,16 +74,23 @@
             }
             console.log(tags);
         }
-        console.log(relevant);
         relevant = relevant.sort((a, b) => b.relevance - a.relevance);
-        console.log(relevant);
+        relevant = relevant.filter(x => {
+            filters.forEach(filter => {
+                x.tags.forEach(tag => {
+                    if (tag == filter) {
+                        return false;
+                    }
+                })
+            })
+            return true;
+        });
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
         });
         // Efficiency? Pfft
         if (query.length < 3) {results.innerHTML = "";}
     });
-    let filters = [];
     document.getElementById("add").addEventListener("click", event => {
         const selected = document.getElementById("filter").value;
         if (!filters.includes(selected)) {
@@ -99,5 +107,6 @@
     }
     function remove(filter) {
         filters.splice(filters.indexOf(filter), 1);
+        update();
     }
 </script>
