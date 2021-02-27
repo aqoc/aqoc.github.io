@@ -18,9 +18,3 @@ I'll link you here if you ask me a common question.
 - [Optimization](faq/optimization.md)
 - [Random Number Generation](faq/random.md)
 - [Damage](faq/damage.md)
-
-{% for page in site.pages %}
-    {% if page.dir == '/faq/' %}
-- {{page.title}} [Tags: {% for tag in page.tags %} {{tag}} {% endfor %}]
-    {% endif %}
-{% endfor %}
