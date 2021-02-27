@@ -36,13 +36,13 @@
                     words.forEach(word => {
                         const distance = levenshtein(s, word);
                         console.log(`Distance between ${s} and ${word} is ${distance}`);
-                        if (distance <= 3) {
+                        if (distance <= 2) {
                             matched += 1;
                         }
                     })
                 })
             });
-            if (matched >= Math.floor(words.length / 2)) {
+            if (matched >= Math.floor(words.length / 3)) {
                 console.log(query, entry);
                 results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
             }
