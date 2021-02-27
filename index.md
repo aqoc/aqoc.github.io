@@ -17,6 +17,6 @@ I'll link you here if you ask me a common question.
 
 {% for page in site.pages %}
     {% if page.dir == '/faq/' %}
-        - {{page.title}} [Tags: {% for tag in page.tags %} tag {% endfor %}]
+- {{page.title}} [Tags: {% for tag in page.tags %} {{tag}} {% endfor %}]
     {% endif %}
 {% endfor %}
