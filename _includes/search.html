@@ -36,17 +36,24 @@
                     words.forEach(word => {
                         const distance = levenshtein(s, word);
                         console.log(`Distance between ${s} and ${word} is ${distance}`);
+                        if (distance <= 2) {
+                            matched = true;
+                        }
                     })
                 })
             });
+            if (matched) {
+                console.log(query, entry);
+                results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
+            }
             console.log(tags);
-            tags.forEach(tag => {
-                console.log(`Tag ${tag}`);
-                if (query == tag) {
-                    console.log(query, entry);
-                    results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
-                }
-            });
+            // tags.forEach(tag => {
+            //     console.log(`Tag ${tag}`);
+            //     if (query == tag) {
+            //         console.log(query, entry);
+            //         results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
+            //     }
+            // });
         }
     });
 </script>
