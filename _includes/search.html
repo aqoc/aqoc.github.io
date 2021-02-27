@@ -20,7 +20,7 @@
                 {% endif %}
             {% endfor %}
         };
-        let query = event.target.value;
+        let query = event.target.value.toLowerCase();
         console.log(`Query: ${query}`);
         let results = document.getElementById("results");
         results.innerHTML = "";
@@ -53,7 +53,9 @@
             }
             console.log(tags);
         }
+        console.log(relevant);
         relevant = relevant.sort((a, b) => b.relevance - a.relevance);
+        console.log(relevant);
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
         });
