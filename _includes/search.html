@@ -42,7 +42,7 @@
                     })
                 })
             });
-            if (matched > Math.floor(words.length / 2) + 1) {
+            if (matched >= Math.floor(words.length / 2)) {
                 console.log(query, entry);
                 results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
             }
