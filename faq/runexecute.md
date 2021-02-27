@@ -1,6 +1,6 @@
 ---
 title: Run Execute
-question: Why is `run execute` unnecessary?
+question: Why is <code>run execute</code> unnecessary?
 layout: faq
 tags:
     - execute
