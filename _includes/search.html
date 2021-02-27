@@ -11,12 +11,12 @@
         let results = document.getElementById("results");
         for (const entry in entries) {
             const tags = entries[entry];
-            for (tag in tags) {
+            tags.forEach(tag => {
                 if (query == tag) {
                     console.log(query, entry);
                     results.innerHTML += `<li>${entry}</li>\n`;
                 }
-            }
+            });
         }
     }
 </script>
