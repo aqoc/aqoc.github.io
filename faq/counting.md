@@ -1,5 +1,9 @@
 ---
 layout: faq
+tags:
+    - score
+    - entity
+    - item
 ---
 # Counting
 

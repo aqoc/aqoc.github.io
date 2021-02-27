@@ -1,5 +1,9 @@
 ---
 layout: faq
+tags:
+    - function
+    - datapack
+    - tags
 ---
 # Function tags
 

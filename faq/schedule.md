@@ -1,5 +1,8 @@
 ---
 layout: faq
+tags:
+    - function
+    - score
 ---
 # Scheduling
 

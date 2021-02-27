@@ -16,5 +16,7 @@ I'll link you here if you ask me a common question.
 - [Damage](faq/damage.md)
 
 {% for page in site.pages %}
-    - {{page.title}}
+    {% if page.dir == '/faq/' %}
+        - {{page.title}} [Tags: {% for tag in page.tags %} tag {% endfor %}]
+    {% endif %}
 {% endfor %}

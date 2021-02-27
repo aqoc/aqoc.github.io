@@ -1,5 +1,9 @@
 ---
 layout: faq
+tags:
+    - entity
+    - attribute
+    - effect
 ---
 # Health manipulation
 > How can I damage/heal the player?

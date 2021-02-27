@@ -1,5 +1,10 @@
 ---
 layout: faq
+tags:
+    - selector
+    - nbt
+    - function
+    - advancement
 ---
 # Optimization
 > How can I optimize my functions?

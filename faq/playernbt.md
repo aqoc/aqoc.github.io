@@ -1,5 +1,10 @@
 ---
 layout: faq
+tags:
+    - nbt
+    - entity
+    - player
+    - item
 ---
 # Player NBT Modification
 > Why can't I modify a player's nbt?
