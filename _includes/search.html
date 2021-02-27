@@ -36,7 +36,7 @@
                     words.forEach(word => {
                         const distance = levenshtein(s, word);
                         console.log(`Distance between ${s} and ${word} is ${distance}`);
-                        if (distance <= 2) {
+                        if (distance <= 4) {
                             matched += 1;
                         }
                     })
