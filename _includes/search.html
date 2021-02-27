@@ -85,15 +85,17 @@
     let filters = [];
     document.getElementById("add").addEventListener("click", event => {
         const selected = document.getElementById("filter").value;
-        filters.push(selected);
+        filters.push(selected.slice());
+        update();
+    });
+    function update() {
         const fill = document.getElementById("filters");
         fill.innerHTML = "";
         filters.forEach(filter => {
             fill.innerHTML += `<button type="button" onclick="remove('${selected}')">${selected}</button>&nbsp;`
         });
-    });
+    }
     function remove(filter) {
-        alert(filter);
         filters.remove(filter);
     }
 </script>
