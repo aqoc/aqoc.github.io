@@ -57,5 +57,7 @@
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
         });
+        // Efficiency? Pfft
+        if (query.length < 3) {results.innerHTML = "";}
     });
 </script>
