@@ -49,6 +49,7 @@
             }
             console.log(tags);
         }
+        console.log(typeof(relevant));
         relevant = relevant.sort((a, b) => a.relevance - b.relevance);
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
