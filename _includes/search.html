@@ -1,5 +1,6 @@
+<input type="text" placeholder="Search here for different articles" id="searchbar"/>
 <span>
-    <input type="text" placeholder="Search here for different articles" id="searchbar"/>
+    Filters:
     <select id="filter">
         {%- capture optionstr -%}
             {%- for page in site.pages -%}
@@ -15,6 +16,7 @@
         <option>{{option}}</option>
         {%- endfor -%}
     </select>
+    <button type="button">Add</button>
 </span>
 <ul id="results"></ul>
 <script src="../js/levenshtein.js"></script>
@@ -76,7 +78,7 @@
         relevant.forEach(r => {
             results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
         });
-        // Efficiency?
+        // Efficiency? Pfft
         if (query.length < 3) {results.innerHTML = "";}
     });
 </script>
