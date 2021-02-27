@@ -1,0 +1,22 @@
+{
+  "name": "aqoc",
+  "version": "1.0.0",
+  "description": "A Question On Commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aqoc/aqoc.github.io.git"
+  },
+  "author": "lolad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aqoc/aqoc.github.io/issues"
+  },
+  "homepage": "https://github.com/aqoc/aqoc.github.io#readme",
+  "dependencies": {
+    "js-levenshtein": "^1.1.6"
+  }
+}

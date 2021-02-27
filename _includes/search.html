@@ -12,7 +12,7 @@
                         {% assign items = s | split: " " %}
                         [{% for i in items %} "{{i}}", {% endfor %}],
                     {% endfor %}
-                ]
+                ],
                 url: "{{page.url}}",
                 question: "{{page.question}}"
             },
@@ -27,6 +27,7 @@
             const tags = entries[entry].tags;
             const url = entries[entry].url;
             const question = entries[entry].question;
+            const summaries = entries[entry].summary;
             console.log(tags);
             tags.forEach(tag => {
                 console.log(`Tag ${tag}`);
