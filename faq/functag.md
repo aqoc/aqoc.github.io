@@ -6,6 +6,8 @@ tags:
     - function
     - datapack
     - tags
+summary:
+    - 
 ---
 
 You use *function tags*!

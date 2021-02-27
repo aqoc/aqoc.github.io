@@ -7,6 +7,12 @@
                 {% if page.dir == '/faq/' %}
             "{{page.title}}": {
                 tags: [{% for tag in page.tags %} "{{tag}}", {% endfor %}],
+                summary: [
+                    {% for s in page.summary %}
+                        {% assign items = s | split: " " %}
+                        [{% for i in items %} "{{i}}," {% endfor %}],
+                    {% endfor %}
+                ]
                 url: "{{page.url}}",
                 question: "{{page.question}}"
             },

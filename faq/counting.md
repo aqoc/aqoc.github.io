@@ -6,6 +6,9 @@ tags:
     - score
     - entity
     - item
+summary:
+    - count entities entity score
+    - count items item score
 ---
 
 ## [Entities](#entities)

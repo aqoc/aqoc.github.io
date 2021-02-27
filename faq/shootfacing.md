@@ -7,4 +7,7 @@ tags:
     - entity
     - projectile
     - rotation
+summary:
+    - shoot facing shootfacing
+    - projectile entity rotation direction
 ---

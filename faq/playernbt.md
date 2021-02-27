@@ -7,6 +7,10 @@ tags:
     - entity
     - player
     - item
+summary:
+    - player nbt data modify change set override
+    - why not can't cannot
+    - alternatives player nbt
 ---
 
 The main thing to understand here is that NBT isn't how the game remembers entities; it's how they're stored in files. While the game's running, entities are stored as actual java objects. This means that accessing and modifying an entity's nbt goes something like:

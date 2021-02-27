@@ -6,6 +6,10 @@ tags:
     - entity
     - attribute
     - effect
+summary:
+    - damage hurt heal modify health player
+    - effect instant damage health
+    - attribute max health
 ---
 
 ## [Instant health/damage](#instant)

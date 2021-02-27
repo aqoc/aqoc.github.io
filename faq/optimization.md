@@ -7,6 +7,11 @@ tags:
     - nbt
     - function
     - advancement
+summary:
+    - optimize optimization optimizing optimise optimising optimisation
+    - efficiency efficient improve speed
+    - nbt speed slow
+    - selector order
 ---
 
 Always remember the number one rule of optimization, and that is:

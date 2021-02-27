@@ -5,6 +5,10 @@ layout: faq
 tags:
     - function
     - score
+summary:
+    - schedule delay time wait sleep
+    - schedule function command
+    - scoreboard timer timers
 ---
 
 ## [The `schedule` command](#schedule)

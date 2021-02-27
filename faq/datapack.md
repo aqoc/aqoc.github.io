@@ -5,6 +5,10 @@ layout: faq
 tags:
     - datapack
     - function
+summary:
+    - data pack datapack create creation how what
+    - function what how create
+    - reload load
 ---
 
 ## **Note, this is a brief overview of data packs. It will help you get started, but there are many, many more features and much is omitted in this question.**
