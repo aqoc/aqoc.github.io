@@ -9,11 +9,12 @@
         };
         let query = document.getElementById("searchbar").value;
         let results = document.getElementById("results");
-        entries.forEach((query, entry) => {
+        for (const entry in entries) {
+            const query = entries[entry];
             if (query == tag) {
                 alert(entry);
             }
-        });
+        }
     }
 </script>
 <input type="text" placeholder="Search here for different articles" id="searchbar" onkeypress="search()"/>
