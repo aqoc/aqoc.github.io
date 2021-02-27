@@ -30,19 +30,19 @@
             const url = entries[entry].url;
             const question = entries[entry].question;
             const summaries = entries[entry].summary;
-            let matched = false;
+            let matched = 0;
             summaries.forEach(summary => {
                 summary.forEach(s => {
                     words.forEach(word => {
                         const distance = levenshtein(s, word);
                         console.log(`Distance between ${s} and ${word} is ${distance}`);
                         if (distance <= 2) {
-                            matched = true;
+                            matched += 1;
                         }
                     })
                 })
             });
-            if (matched) {
+            if (matched > Math.floor(words.length / 2) + 1) {
                 console.log(query, entry);
                 results.innerHTML += `<li><a href="${url}">${entry}</a> - ${question}</li>\n`;
             }
