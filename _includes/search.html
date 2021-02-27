@@ -13,7 +13,8 @@
             const tags = entries[entry];
             for (tag in tags) {
                 if (query == tag) {
-                    results.innerHTML += `<li>${query}</li>\n`;
+                    console.log(query, entry);
+                    results.innerHTML += `<li>${entry}</li>\n`;
                 }
             }
         }
