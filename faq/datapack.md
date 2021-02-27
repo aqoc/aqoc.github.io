@@ -1,5 +1,8 @@
 ---
 layout: faq
+tags:
+    - datapack
+    - function
 ---
 # Data packs
 
