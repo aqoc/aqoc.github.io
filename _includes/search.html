@@ -10,7 +10,7 @@
                 {%- endif -%}
             {%- endfor -%}
         {%- endcapture -%}
-        {%- assign options = optionstr | split, "," -% | uniq}
+        {%- assign options = optionstr | split, "," | uniq -%}
         {%- for option in options -%}
         <option>{{option}}</option>
         {%- endfor -%}
