@@ -1,13 +1,12 @@
 ---
+title: Counting
+question: How do I count the number of <i>x</i>?
 layout: faq
 tags:
     - score
     - entity
     - item
 ---
-# Counting
-
-> How do I count the number of *x*?
 
 ## [Entities](#entities)
 

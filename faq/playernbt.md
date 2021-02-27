@@ -1,4 +1,6 @@
 ---
+title: Player NBT Modification
+question: Why can't I modify a player's nbt?
 layout: faq
 tags:
     - nbt
@@ -6,8 +8,6 @@ tags:
     - player
     - item
 ---
-# Player NBT Modification
-> Why can't I modify a player's nbt?
 
 The main thing to understand here is that NBT isn't how the game remembers entities; it's how they're stored in files. While the game's running, entities are stored as actual java objects. This means that accessing and modifying an entity's nbt goes something like:
 

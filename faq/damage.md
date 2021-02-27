@@ -1,12 +1,12 @@
 ---
+title: Health manipulation
+question: How can I damage/heal the player?
 layout: faq
 tags:
     - entity
     - attribute
     - effect
 ---
-# Health manipulation
-> How can I damage/heal the player?
 
 ## [Instant health/damage](#instant)
 The simplest way is through instant health / damage.

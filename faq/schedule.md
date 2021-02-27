@@ -1,12 +1,11 @@
 ---
+title: Scheduling
+question: How can I run a command after a delay?
 layout: faq
 tags:
     - function
     - score
 ---
-# Scheduling
-
-> How can I run a command after a delay?
 
 ## [The `schedule` command](#schedule)
 

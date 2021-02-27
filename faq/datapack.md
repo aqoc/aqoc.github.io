@@ -1,13 +1,11 @@
 ---
+title: Data packs
+question: How do I create a data pack?
 layout: faq
 tags:
     - datapack
     - function
 ---
-# Data packs
-
-> How do I create a data pack?
-
 
 ## **Note, this is a brief overview of data packs. It will help you get started, but there are many, many more features and much is omitted in this question.**
 

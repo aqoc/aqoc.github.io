@@ -1,13 +1,12 @@
 ---
+title: Function tags
+question: How do I run a function every tick, or when my data pack loads?
 layout: faq
 tags:
     - function
     - datapack
     - tags
 ---
-# Function tags
-
-> How do I run a function every tick, or when my data pack loads?
 
 You use *function tags*!
 

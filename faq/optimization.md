@@ -1,4 +1,6 @@
 ---
+title: Optimization
+question: How can I optimize my functions?
 layout: faq
 tags:
     - selector
@@ -6,8 +8,6 @@ tags:
     - function
     - advancement
 ---
-# Optimization
-> How can I optimize my functions?
 
 Always remember the number one rule of optimization, and that is:
 
