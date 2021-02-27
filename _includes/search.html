@@ -92,7 +92,7 @@
         const fill = document.getElementById("filters");
         fill.innerHTML = "";
         filters.forEach(filter => {
-            fill.innerHTML += `<button type="button" onclick="remove('${selected}')">${selected}</button>&nbsp;`
+            fill.innerHTML += `<button type="button" onclick="remove('${filter}')">${filter}</button>&nbsp;`
         });
     }
     function remove(filter) {
