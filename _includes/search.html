@@ -1,5 +1,3 @@
-<input type="text" placeholder="Search here for different articles" id="searchbar" onkeypress="search()"/>
-<div id="results"></div>
 <script>
     function search() {
         const entries = {
@@ -10,10 +8,13 @@
             {% endfor %}
         };
         let query = document.getElementById("searchbar").value;
-        for ((entry, tag) in entries) {
+        let results = document.getElementById("results");
+        entries.forEach((query, entry) => {
             if (query == tag) {
                 alert(entry);
             }
-        }
+        });
     }
 </script>
+<input type="text" placeholder="Search here for different articles" id="searchbar" onkeypress="search()"/>
+<div id="results"></div>
