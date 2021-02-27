@@ -12,6 +12,5 @@ I'll link you here if you ask me a common question.
 ## Contents
 
 {% for page in site.pages %}
-    {% if page.dir == '/faq/' %}
-- [{{page.title}}]({{page.url}}){% endif %}
+{% if page.dir == '/faq/' %}- [{{page.title}}]({{page.url}}){% endif %}
 {% endfor %}
