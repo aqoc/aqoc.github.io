@@ -44,7 +44,7 @@
                 {% endif %}
             {% endfor %}
         };
-        let query = document.getElementById("searchbar").target.value.toLowerCase();
+        let query = document.getElementById("searchbar").value.toLowerCase();
         console.log(`Query: ${query}`);
         let results = document.getElementById("results");
         results.innerHTML = "";
