@@ -22,8 +22,8 @@
 <ul id="results"></ul>
 <script src="../js/levenshtein.js"></script>
 <script>
+    let filters = [];
     document.getElementById("searchbar").addEventListener('input', (event) => {
-        let filters = [];
         const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
@@ -77,11 +77,7 @@
         relevant = relevant.sort((a, b) => b.relevance - a.relevance);
         relevant = relevant.filter(x => {
             filters.forEach(filter => {
-                x.tags.forEach(tag => {
-                    if (tag == filter) {
-                        return false;
-                    }
-                })
+                if (!x.tags.includes(filter)) {return false}
             })
             return true;
         });
