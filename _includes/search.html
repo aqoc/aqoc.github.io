@@ -79,7 +79,7 @@
         }
         relevant = relevant.sort((a, b) => {
             if (a.relevance == b.relevance) {
-                if ([a.entry, b.entry].sort()[0] === a.entry) {
+                if (a.entry < b.entry) {
                     return -1;
                 } else {
                     return 1;
