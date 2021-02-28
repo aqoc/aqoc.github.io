@@ -1,6 +1,7 @@
 ---
 layout: faq
-title: How do I simulate knockback on an entity?
+title: Knockback
+question: How do I simulate knockback on an entity?
 tags:
     - damage
     - movement
