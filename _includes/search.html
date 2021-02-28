@@ -70,7 +70,7 @@
             });
             if (matched >= words.length) {
                 console.log(query, entry);
-                relevant.push({relevance: matched, url: url, entry: entry, question: question});
+                relevant.push({relevance: matched, url: url, entry: entry, question: question, tags: tags});
             }
             console.log(tags);
         }
