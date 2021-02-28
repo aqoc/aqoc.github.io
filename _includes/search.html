@@ -71,7 +71,7 @@
                     matched += any;
                 })
             });
-            if (matched >= words.length) {
+            if (matched >= words.length || query.length < 3) {
                 console.log(query, entry);
                 relevant.push({relevance: matched, url: url, entry: entry, question: question, tags: tags});
             }
