@@ -21,16 +21,14 @@ Raycasting is a method of "drawing" a line from the head of a mob to detect wher
 > 
 > ```
 #> foo:start_raycast
-execute as @a anchored eyes positioned ^ ^ ^ run function foo:raycast
+execute as @a at @s anchored eyes positioned ^ ^ ^ run function foo:raycast
 > ```
 > 
 > ```
 #> foo:raycast
 execute unless block ~ ~ ~ #air run setblock ~ ~ ~ diamond_block
-execute if block ~ ~ ~ #air unless block ~ ~ ~ void_air positioned ^ ^ ^0.1 run function foo:raycast
+execute if block ~ ~ ~ #air positioned ^ ^ ^0.1 run function foo:raycast
 > ```
-
-Note the void air check is used in case the player is looking up, so we don't go out of the world.
 
 You can fine-tune the `0.1`; a larger value is less accurate, and a smaller value makes more function calls. 0.1 is usually a good step but you might want to try 0.05.
 
