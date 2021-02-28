@@ -34,4 +34,4 @@ Note the void air check is used in case the player is looking up, so we don't go
 
 You can fine-tune the `0.1`; a larger value is less accurate, and a smaller value makes more function calls. 0.1 is usually a good step but you might want to try 0.05.
 
-Give up? You can use [vdvman's raycast generator](https://skylinerw.com/vdvman1/raycast/)
+Give up? You can use [skylinerw's raycast generator](https://skylinerw.com/vdvman1/raycast/)
