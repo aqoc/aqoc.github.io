@@ -63,7 +63,7 @@
                             words.forEach(word => {
                             const distance = levenshtein(s.slice(0, p+1), word);
                             console.log(`Distance between ${s.slice(0, p+1)} and ${word} is ${distance}`);
-                            if (distance <= 2) {
+                            if (distance <= (word.length / 3).ceil()) {
                                 any = p;
                             }
                         })
