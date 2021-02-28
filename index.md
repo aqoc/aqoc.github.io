@@ -8,8 +8,3 @@ I'll link you here if you ask me a common question.
 ## Search
 
 {% include search.html %}
-
-## Contents
-
-{% for page in site.pages %}{% if page.dir == '/faq/' %}- [{{page.title}}]({{page.url}}){% endif %}
-{% endfor %}
