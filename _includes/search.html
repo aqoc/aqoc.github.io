@@ -117,5 +117,5 @@
         filters.splice(filters.indexOf(filter), 1);
         update();
     }
-    document.addEventListener("load", update_search);
+    window.onload = update_search;
 </script>
