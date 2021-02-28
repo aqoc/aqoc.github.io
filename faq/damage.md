@@ -3,9 +3,10 @@ title: Health manipulation
 question: How can I damage/heal the player?
 layout: faq
 tags:
-    - entity
+    - player
     - attribute
     - effect
+    - damage
 summary:
     - damage hurt heal modify health player
     - effect instant damage health
