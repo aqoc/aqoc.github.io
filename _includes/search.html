@@ -78,7 +78,7 @@
         relevant.forEach(r => {
             let matches = true;
             filters.forEach(filter => {
-                if (!x.tags.includes(filter)) {matches = false}
+                if (!r.tags.includes(filter)) {matches = false}
             })
             if (matches) {
                 results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
