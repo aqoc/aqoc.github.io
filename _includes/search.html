@@ -24,6 +24,9 @@
 <script>
     let filters = [];
     document.getElementById("searchbar").addEventListener('input', (event) => {
+        update_search();
+    });
+    function update_search() {
         const entries = {
             {% for page in site.pages %}
                 {% if page.dir == '/faq/' %}
@@ -41,7 +44,7 @@
                 {% endif %}
             {% endfor %}
         };
-        let query = event.target.value.toLowerCase();
+        let query = document.getElementById("searchbar").target.value.toLowerCase();
         console.log(`Query: ${query}`);
         let results = document.getElementById("results");
         results.innerHTML = "";
@@ -85,8 +88,8 @@
             }
         });
         // Efficiency? Pfft
-        if (query.length < 3) {results.innerHTML = "";}
-    });
+        if (query.length < 3 && filters.length == 0) {results.innerHTML = "";}
+    }
     document.getElementById("add").addEventListener("click", event => {
         const selected = document.getElementById("filter").value;
         if (!filters.includes(selected)) {
@@ -100,6 +103,7 @@
         filters.forEach(filter => {
             fill.innerHTML += `<button type="button" onclick="remove('${filter}')">${filter}</button>&nbsp;`
         });
+        update_search();
     }
     function remove(filter) {
         filters.splice(filters.indexOf(filter), 1);
