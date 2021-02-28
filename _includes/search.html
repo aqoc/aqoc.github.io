@@ -75,14 +75,14 @@
             console.log(tags);
         }
         relevant = relevant.sort((a, b) => b.relevance - a.relevance);
-        relevant = relevant.filter(x => {
-            filters.forEach(filter => {
-                if (!x.tags.includes(filter)) {return false}
-            })
-            return true;
-        });
         relevant.forEach(r => {
-            results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
+            let matches = true;
+            filters.forEach(filter => {
+                if (!x.tags.includes(filter)) {matches = false}
+            })
+            if (matches) {
+                results.innerHTML += `<li><a href="${r.url}">${r.entry}</a> - ${r.question}</li>\n`;
+            }
         });
         // Efficiency? Pfft
         if (query.length < 3) {results.innerHTML = "";}
