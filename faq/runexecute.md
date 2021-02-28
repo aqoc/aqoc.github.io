@@ -4,6 +4,7 @@ question: Why is <code>run execute</code> unnecessary?
 layout: faq
 tags:
     - execute
+    - unnecessary
 summary:
     - run execute unnecessary unneeded invalid
 ---
