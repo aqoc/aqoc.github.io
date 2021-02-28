@@ -1,6 +1,7 @@
 ---
 layout: faq
 title: Local Coordinates
+question: How can I target locations relative to the player's rotation?
 tags:
     - coordinates
     - rotation
