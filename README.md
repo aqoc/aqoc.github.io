@@ -5,7 +5,7 @@ This is a collection of frequently asked command-related / mapmaking questions, 
 
 ## Contributing
 
-To contribute, make a PR with a new faq in `/faq/`. You can look at the other faqs for reference, but you need to have a header of the following kind:
+To add a new faq, make a PR with it in `/faq/`. You can look at the other faqs for reference, but you need to have a header of the following kind:
 ```
 ---
 layout: faq
