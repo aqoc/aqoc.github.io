@@ -45,7 +45,6 @@
             {% endfor %}
         };
         let query = document.getElementById("searchbar").value.toLowerCase();
-        console.log(`Query: ${query}`);
         let results = document.getElementById("results");
         results.innerHTML = "";
         const words = query.split(' ');
@@ -62,7 +61,6 @@
                     for (let p = 0; p < s.length; p++) {
                             words.forEach(word => {
                             const distance = levenshtein(s.slice(0, p+1), word);
-                            console.log(`Distance between ${s.slice(0, p+1)} and ${word} is ${distance}`);
                             if (distance <= Math.ceil(word.length / 3)) {
                                 any = p;
                             }
@@ -72,10 +70,8 @@
                 })
             });
             if (matched >= words.length || query.length < 3) {
-                console.log(query, entry);
                 relevant.push({relevance: matched, url: url, entry: entry, question: question, tags: tags});
             }
-            console.log(tags);
         }
         relevant = relevant.sort((a, b) => {
             if (a.relevance == b.relevance) {
