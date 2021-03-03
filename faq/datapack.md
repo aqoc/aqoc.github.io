@@ -11,7 +11,7 @@ summary:
     - reload load
 ---
 
-## **Note, this is a brief overview of data packs. It will help you get started, but there are many, many more features and much is omitted in this question.**
+#### **Note, this is a brief overview of data packs. It will help you get started, but there are many, many more features and much is omitted in this question.**
 
 ## [What is a data pack?](#what)
 A data pack is a collection of files that act as a sort of "vanilla mod", so to speak. These contain many useful features, one being **functions**. Functions are files that are literally lists of commands. But they're much easier than making a chain of command blocks, because, well, let's just say adding a new line in a text editor is easier than moving a whole 50 block chain. They also have a host of other advantages.
