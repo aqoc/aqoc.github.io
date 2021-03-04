@@ -8,6 +8,9 @@
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{page.url}}"/>
         <meta property="og:description" content="{{page.question}}"/>
+        {%- if page.image -%}
+          <meta property="og:image" content="https://aqoc.github.io/images/{{page.image}}">
+        {%- endif -%}
     {%- endif -%}
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -32,6 +35,9 @@
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{page.url}}"/>
         <meta property="og:description" content="{{page.question}}"/>
+        {%- if page.image -%}
+          <meta property="og:image" content="https://aqoc.github.io/images/{{page.image}}">
+        {%- endif -%}
     {%- endif -%}
   </head>
   <body>

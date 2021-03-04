@@ -1,6 +1,7 @@
 ---
 title: Data packs
 question: How do I create a data pack?
+image: datapack.png
 layout: faq
 tags:
     - datapack
