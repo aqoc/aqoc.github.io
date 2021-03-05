@@ -1,8 +1,13 @@
 ---
 layout: faq
-title: What's not working?
-question: Why isn't this working?
+title: Why isn't this working?
+question: |
+    MAGIC! We're not psychics.
+    Tell us what's not working.
 tags: []
+summary: []
+permalink: /magic
+og: true
 ---
 
-Why isn't *what* working? There's no way someone can tell you what's not working if you're not specific.
+There's no way we'll understand the question if you don't ask it.
