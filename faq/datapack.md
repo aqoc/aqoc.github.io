@@ -1,7 +1,6 @@
 ---
 title: Data packs
 question: How do I create a data pack?
-image: datapack.png
 layout: faq
 tags:
     - datapack
@@ -40,7 +39,13 @@ Inside your namespace is where various different folders go. One of these is `fu
 ## [Loading the data pack](#loading)
 Go into your world, and run `/reload`. Great! You can now run `/function namespace:function`.
 
+## [Other parts](#others)
+
+Functions aren't the only thing you can have in a data pack, see [the wiki](https://minecraft.gamepedia.com/Data_pack) for a complete reference. Here's a diagram of basic structure:
+
+<img src="../images/datapack.png" />
+
 ## [I'm still confused.](#plenary)
-I'm not the best at wording, but there are plenty things you can do. Check [the wiki](https://minecraft.gamepedia.com/data pack) which contains everything you need to know about data packs. You can also find generators online, like [Misode's](https://misode.github.io).
+I'm not the best at wording, but there are plenty things you can do. Again, check [the wiki](https://minecraft.gamepedia.com/Data_pack) which contains everything you need to know about data packs. You can also find generators online, like [Misode's](https://misode.github.io).
 
 And of course, ask away in discord!
