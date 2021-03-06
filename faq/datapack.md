@@ -19,7 +19,7 @@ A data pack is a collection of files that act as a sort of "vanilla mod", so to 
 ## [How to make a data pack](#how)
 Firstly, you'll need to find your world folder (data packs are stored in each world separately). It's in `.minecraft/saves`. (If you don't know where your `.minecraft` is, look it up for your operating system). There's a folder in it called `data packs`; this is where data packs go. Create your data pack folder in here, call it whatever you like.
 
-Next, we need to tell minecraft "THIS IS A data pack". Create a file called `pack.mcmeta`, which will do this. It uses a json format, and quite a simple structure (you can copy-paste the following):
+Next, we need to tell minecraft "THIS IS A DATA PACK". Create a file called `pack.mcmeta`, which will do this. It uses a json format, and quite a simple structure (you can copy-paste the following):
 ```json
 {
     "pack": {
