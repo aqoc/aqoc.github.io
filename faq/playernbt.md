@@ -34,7 +34,7 @@ There are some obvious ones:
 - Effects: we can use `/effect`
 - Advancements: we can use `/advancement`
 - Tags: we can use `/tag`
-- Scoreboards: we can use `/scoreboard`
+- Recipes: we can use `/recipe`
 
 But generally people figure out those on their own. One thing people struggle with a lot is *item modification*.
 
